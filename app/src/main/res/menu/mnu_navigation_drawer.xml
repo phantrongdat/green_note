@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navAllNote"
+            android:title="All Note"
+            android:icon="@drawable/nav_allnote"></item>
+        <item
+            android:id="@+id/navSearch"
+            android:title="Search"
+            android:icon="@drawable/nav_search"></item>
+        <item
+            android:id="@+id/navStatistics"
+            android:title="Statistics"
+            android:icon="@drawable/nav_statistics"></item>
+        <item
+            android:id="@+id/navAbout"
+            android:title="About"
+            android:icon="@drawable/nav_about"></item>
+    </group>
+    <item android:title="Configurations">
+        <menu>
+        <item
+            android:id="@+id/navHelp"
+            android:title="Help"
+            android:icon="@drawable/nav_help"></item>
+        <item
+            android:id="@+id/navSetting"
+            android:title="Setting"
+            android:icon="@drawable/nav_setting"></item>
+        </menu>
+    </item>
+</menu>

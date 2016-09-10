@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/itmMainSearch"
+        android:icon="@drawable/ic_menu_search"
+        android:title="Search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always|withText"></item>
+    <item
+        android:id="@+id/itmMainShare"
+        android:icon="@drawable/abc_ic_menu_share_mtrl_alpha"
+        android:title="Share"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+        app:showAsAction="always|withText"></item>
+    <item
+        android:id="@+id/itmMainSort"
+        android:icon="@drawable/ic_menu_sort"
+        android:title="Sort"
+        app:showAsAction="ifRoom">
+        <menu xmlns:android="http://schemas.android.com/apk/res/android">
+            <item
+                android:id="@+id/itmSortName"
+                android:title="Sort by name" />
+            <item
+                android:id="@+id/itmSortDate"
+                android:title="Sort by date" />
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/itmSetting"
+        app:showAsAction="never"
+        android:title="Setting"></item>
+</menu>
+

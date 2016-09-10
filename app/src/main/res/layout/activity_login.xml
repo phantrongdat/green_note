@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login6"
+    android:orientation="vertical">
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="GREEN NOTE"
+        android:textSize="35dp"
+        android:textColor="#ffffff"
+        android:id="@+id/textView2"
+        android:layout_marginTop="80dp"
+        android:paddingRight="60dp"
+        android:gravity="right"/>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Username: "
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffffff"
+            android:id="@+id/textView4" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtUser"
+            android:textColor="#ffffff"
+            android:layout_marginRight="70dp"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Password: "
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffffff"
+            android:id="@+id/textView5" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="#ffffff"
+            android:ems="10"
+            android:layout_marginRight="70dp"
+            android:id="@+id/edtPassword"
+            android:layout_weight="1" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <Button
+            style="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:textStyle="normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:id="@+id/button"
+            android:onClick="login"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#fffefe"
+            android:layout_gravity="center_horizontal" />
+    </TableRow>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Login for the first time or"
+        android:id="@+id/textView6"
+        android:textColor="#ffffff"
+        android:layout_marginTop="160dp"
+        android:layout_marginRight="50dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:id="@+id/button2"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="50dp"
+        android:onClick="skip"
+        android:background="@android:color/transparent"
+        android:layout_gravity="right" />
+</LinearLayout>

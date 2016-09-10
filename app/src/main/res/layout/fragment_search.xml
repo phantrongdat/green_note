@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/layoutNoteList"
+    tools:context="vn.dat.greennote.NoteMenu.NoteList">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fdfff2"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#f2fae2"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tips!: "
+                android:textColor="#565656"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="enter text into the search box to search"
+                android:textColor="#545454"
+                android:textSize="15dp" />
+
+        </TableRow>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+            <ListView
+                android:id="@+id/lstNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtResult"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_gravity="center_horizontal|top"
+                android:gravity="center"
+                android:paddingRight="16dp"
+                android:text="It all begins with notes.!" />
+
+        </FrameLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

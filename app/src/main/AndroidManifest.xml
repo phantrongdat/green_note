@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vn.dat.greennote">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app10"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/DatTheme">
+        <activity android:name=".MainActivity"></activity>
+
+        <activity android:name=".NoteStart">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".NoteMain">
+
+        </activity>
+        <activity
+            android:name=".NoteCreate"
+            android:parentActivityName=".NoteMenu.NoteList" />
+        <activity
+            android:name=".NoteEdit"
+            android:parentActivityName=".NoteMenu.NoteList" />
+
+        <activity android:name=".NoteMenu.NoteList" />
+
+        <receiver android:name=".NoteWidget.MyWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+        <service
+            android:name=".NoteWidget.ListViewWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <activity
+            android:name=".DatabaseHandler.FullscreenIMAGE"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_fullscreen_image"
+            android:theme="@style/FullscreenTheme"></activity>
+    </application>
+</manifest>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#309e45</color>
+    <color name="colorPrimaryDark">#2b8c3e</color>
+    <color name="colorAccent">#309e45</color>
+    <color name="foreground_material_light">#309e45</color>
+    <color name="black1">#3b3b3b</color>
+    <color name="black">#000000</color>
+    <color name="background_holo_light">#309e45</color>
+    <color name="bright_foreground_holo_light">#ffffff</color>
+    <color name="actionbar_background">#309e45</color>
+    <color name="actionbar_text">#ffffff</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

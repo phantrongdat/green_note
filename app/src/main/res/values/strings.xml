@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Green Note</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_kkkkkkkkkkkkkkkkkkkkkkkk">kkkkkkkkkkkkkkkkkkkkkkkk</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_activity_fullscreen_img">IMAGE VIEW</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="about_content_1">Là ứng dụng hoàn toàn miễn phí, chúng tôi cung cấp ứng dụng nhằm phục vụ nhu cầu hàng ngày giúp ghi lại những khoẳng khắc đáng nhớ hay có thể ghi lại và sắp xếp công việc cho người sử dụng.
+</string>
+    <string name="about_content_1_en">App is completely free, we offer applications to serve the daily needs to record the memorable moments and can record and organize the work for the user.</string>
+    <string name="about_content_2">Green Note được xây dựng bởi TDL Téam.</string>
+    <string name="about_content_2_en">Green Note built by TDL Team.</string>
+
+    <string name="about_content_3">Nếu bạn có ý tưởng, nhận xét hay thắc mắc hãy gửi phản hồi lại cho chúng tôi.</string>
+    <string name="about_content_3_en">If you have ideas, comments or questions please send feedback to us.</string>
+
+    <string name="title_activity_fullscreen_image">FullscreenIMAGE</string>
+</resources>

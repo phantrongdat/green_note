@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="5dp"
+    android:paddingTop="1dp"
+    android:weightSum="100">
+
+
+    <ImageView
+        android:id="@+id/imgContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:maxHeight="95dp"
+        android:maxWidth="95dp"
+        android:paddingRight="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imgContent"
+        android:layout_toStartOf="@+id/imgContent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTitleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:maxHeight="25dp"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#565656"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/txtDateView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:maxHeight="70dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b7e54"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/txtContentView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:maxHeight="70dp"
+            android:minHeight="40dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#7e7e7e"
+            android:textSize="13.5dp" />
+    </LinearLayout>
+
+</RelativeLayout>

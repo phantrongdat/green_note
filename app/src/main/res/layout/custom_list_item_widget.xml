@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:weightSum="100">
+
+
+    <ImageView
+        android:id="@+id/imgContentWidget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:maxHeight="70dp"
+        android:maxWidth="70dp"
+        android:paddingRight="5dp"
+        android:src="@drawable/bg_balloon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imgContentWidget"
+        android:layout_toStartOf="@+id/imgContentWidget"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTitleWidget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:maxHeight="55dp"
+            android:text="Large Textasdfghjkl;asdfghjsdfgh k k aksjfslaksjfl "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#212121"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDateWidget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#4b7e54"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/txtContentWidget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:maxHeight="100dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#535353"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+</RelativeLayout>

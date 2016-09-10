@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/itmCreateDone"
+        android:icon="@drawable/ic_menu_done"
+        app:showAsAction="always|withText"
+        android:title="Save" />
+    <item
+        android:id="@+id/itmCreateClear"
+        android:icon="@drawable/ic_menu_clear"
+        android:title="Clear"
+        app:showAsAction="always|withText"></item>
+    <item
+        android:id="@+id/itmCreateSave"
+        app:showAsAction="never"
+        android:title="Save"></item>
+</menu>

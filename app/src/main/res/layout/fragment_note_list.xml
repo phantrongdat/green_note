@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/layoutNoteList"
+    tools:context="vn.dat.greennote.NoteMenu.NoteList">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fdfff2"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#f2fae2"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tips!: "
+                android:textColor="#565656"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap + button to create a new Note ."
+                android:textColor="#545454"
+                android:textSize="15dp" />
+
+
+        </TableRow>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+            <ListView
+                android:id="@+id/lstNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:listSelector="@drawable/item_selected"/>
+
+
+            <com.getbase.floatingactionbutton.FloatingActionsMenu
+                android:id="@+id/floatActionMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right|end"
+                fab:fab_addButtonColorNormal="#309e45"
+                fab:fab_addButtonColorPressed="#309e45"
+                fab:fab_addButtonPlusIconColor="#ffffff"
+                fab:fab_labelStyle="@style/menu_labels_style">
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabCreateRecord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_fab_recorder_27"
+                    fab:fab_colorNormal="#70b443"
+                    fab:fab_colorPressed="#70b443"
+                    fab:fab_size="mini"
+                    fab:fab_title="Record Note" />
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabCreateCamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_fab_image_27"
+                    fab:fab_colorNormal="#70b443"
+                    fab:fab_colorPressed="#70b443"
+                    fab:fab_size="mini"
+                    fab:fab_title="Image Note" />
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabCreateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_fab_text_27"
+                    fab:fab_colorNormal="#70b443"
+                    fab:fab_colorPressed="#70b443"
+                    fab:fab_size="mini"
+                    fab:fab_title="Create a text Note" />
+
+            </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+            <TextView
+                android:id="@+id/txtResult"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_gravity="center_horizontal|top"
+                android:gravity="center"
+                android:paddingRight="16dp"
+                android:text="It all begins with notes.!" />
+
+        </FrameLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
